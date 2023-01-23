@@ -23,27 +23,5 @@ module.exports = {
     "@typescript-eslint"
   ],
   "rules": {
-    
-    "@typescript-eslint/naming-convention": [
-      error,
-      {
-        "selector": "function",
-        "format": [pascalCase]
-      },
-      {
-        "selector":
-          "variable", "format": [camelCase]
-      },
-      // For functions declared as variables, we still want to use PascalCase - override the variable rule
-      {
-        "selector": "variable",
-        "types": ["function"],
-        "format": [pascalCase]
-      },
-      {
-        "selector": "classMethod",
-        "format": [pascalCase]
-      }
-    ]
   }
 }
