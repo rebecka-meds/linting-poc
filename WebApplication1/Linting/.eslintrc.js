@@ -1,8 +1,4 @@
-﻿const error = "error";
-const pascalCase = "PascalCase";
-const camelCase = "camelCase";
-
-module.exports = {
+﻿module.exports = {
   "env": {
     "browser": true,
     "es2021": true
