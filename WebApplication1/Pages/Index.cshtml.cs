@@ -2,19 +2,19 @@
 
 namespace WebApplication1.Pages
 {
-  public class IndexModel : PageModel
-  {
-    private readonly ILogger<IndexModel> _logger;
-    public string? TestText { get; set; }
-
-    public IndexModel(ILogger<IndexModel> logger)
+    public class IndexModel : PageModel
     {
-      _logger = logger;
-    }
+        private readonly ILogger<IndexModel> _logger;
+        public string? TestText { get; set; }
 
-    public void OnGet()
-    {
-      TestText = "This is a server-generated text ...";
+        public IndexModel(ILogger<IndexModel> logger)
+        {
+            _logger = logger;
+        }
+
+        public void OnGet()
+        {
+            TestText = "This is a server-generated text ...";
+        }
     }
-  }
 }
